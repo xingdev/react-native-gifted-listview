@@ -280,7 +280,7 @@ var GiftedListView = React.createClass({
     } else if (this._getRows().length === 0) {
       return this.emptyView(this._onRefresh);
     } else {
-      return null;
+      return this.paginationAllLoadedView();
     }
   },
 
